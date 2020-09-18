@@ -5,4 +5,3 @@
   $router->get('about/culture', 'PagesController@aboutCulture');
   $router->get('users', 'UsersController@index');
   $router->post('users', 'UsersController@store');
-?>
