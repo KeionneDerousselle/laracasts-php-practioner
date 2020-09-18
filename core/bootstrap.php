@@ -1,8 +1,8 @@
 <?php
   use App\Core\App;
 
-  App::bind('config', $config = require "config.php");
-  App::bind('database', new Db(DBConnection::getConnection($config["database"])));
+  App::bind('config', $config = require 'config.php');
+  App::bind('database', new Db(DBConnection::getConnection($config['database'])));
 
   function view($viewName, $data = [])
   {
