@@ -1,5 +1,6 @@
 <?php
-  namespace App\Controllers;
+
+namespace App\Controllers;
 
   class PagesController
   {
@@ -10,8 +11,8 @@
 
       public function about()
       {
-          $companyName = "Test Company";
-          return view('about', [ 'companyName' => $companyName ]);
+          $companyName = 'Test Company';
+          return view('about', ['companyName' => $companyName]);
       }
 
       public function aboutCulture()
