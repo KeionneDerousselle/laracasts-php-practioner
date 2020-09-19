@@ -1,16 +1,17 @@
 <?php
-  use App\Core\App;
 
-  App::bind('config', $config = require 'config.php');
-  App::bind('database', new Db(DBConnection::getConnection($config['database'])));
+use App\Core\App;
 
-  function view($viewName, $data = [])
-  {
-      extract($data);
-      return require "app/views/$viewName.view.php";
-  }
+App::bind('config', $config = require 'config.php');
+App::bind('database', new Db(DBConnection::getConnection($config['database'])));
 
-  function redirect($path)
-  {
-      header("Location: /$path");
-  }
+function view($viewName, $data = [])
+{
+  extract($data);
+  return require "app/views/$viewName.view.php";
+}
+
+function redirect($path)
+{
+  header("Location: /$path");
+}

@@ -7,4 +7,4 @@
   <title>My App</title>
 </head>
 <body>
-  <?php require('nav.php');?>
+  <?php require 'nav.php';?>

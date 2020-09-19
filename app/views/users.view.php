@@ -1,4 +1,4 @@
-<?php require('partials/head.php');?>
+<?php require 'partials/head.php';?>
 <h1>All Users</h1>
 
 <?php foreach ($users as $user): ?>
@@ -12,4 +12,4 @@
   <input type="text" name="name" id="name">
   <button type="submit" name="submit">Submit</button>
 </form>
-<?php require('partials/footer.php');
+<?php require 'partials/footer.php';
